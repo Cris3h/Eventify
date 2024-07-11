@@ -7,23 +7,14 @@ interface ModalStartProps {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const ModalStart: React.FC<ModalStartProps> = ({
-  modalState,
-  setShowModal,
-}) => {
+const ModalStart: React.FC<ModalStartProps> = ({ modalState, setShowModal }) => {
   const [newUSer, setNewUser] = useState<Boolean>(true);
-  // const [showModal, setShowModal] = useState<boolean>(true);
 
   const handleModalState = () => {
     setShowModal(!modalState);
   };
 
   return (
-    // <div className="">
-    //   {newUSer
-    //   ? (<ModalNewUser modalState={modalState} handleModalState={handleModalState}/>)
-    //   : ( <ModalNews modalState={modalState} handleModalState={handleModalState}/>)}
-    // </div>
     <>
       {modalState && (
         <div className="min-h-screen flex items-center justify-center sm:p-8 ">
