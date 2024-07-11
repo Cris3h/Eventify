@@ -1,4 +1,4 @@
 export interface ModalProps {
     modalState: boolean;
-    setModalState: () => void;
+    handleModalState: () => void;
 }
