@@ -22,7 +22,7 @@ const ModalNewUser: React.FC<ModalProps> = ({ modalState }) => {
   });
 
 
-  const createNewPerson = (number) => {
+  const createNewPerson = (number: number) => {
     let peoples = [];
     for(let i = 0; i < number; i++){
       peoples.push(number + i)
