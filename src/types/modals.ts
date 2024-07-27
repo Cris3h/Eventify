@@ -1,4 +1,4 @@
-export interface ModalProps {
+export interface ModalStartProps {
     modalState: boolean;
-    handleModalState: () => void;
-}
+    setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
+  }

@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import ModalStart from "@/components/ModalStart";
+import Dashboard from "@/components/Dashboard";
+import Sidebar from "@/components/Sidebar";
 
 
-const Dashboard = () => {
+const User = () => {
   const [showModal, setShowModal] = useState<boolean>(true);
+  const [showSidebar, setShowSidebar] = useState<boolean>(true);
+
+  console.log(showSidebar)
   console.log(showModal)
 
   const overlay = `absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-center bg-[url('../images/types/kelsey-chance-tAH2cA_BL5g-unsplash.jpg')]`
@@ -15,7 +20,8 @@ const Dashboard = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-center bg-[url('../images/types/kelsey-chance-tAH2cA_BL5g-unsplash.jpg')]">
 
           {/* aca va el dashboard */}
-
+          <Sidebar sidebarState={showSidebar} setShowSidebar={setShowSidebar}/>
+          {/* <Dashboard /> */}
         </div>
 
        { showModal && <div className="absolute top-0 left-0 w-full h-full bg-[#D9D9D9] opacity-35"></div>}
@@ -34,4 +40,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default User;
