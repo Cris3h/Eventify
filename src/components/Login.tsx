@@ -35,7 +35,7 @@ const Login: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    router.push('/dashboard')
+    router.push('/user')
     console.log("user info: ->", userInfo);
   };
 

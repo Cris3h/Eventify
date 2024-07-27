@@ -7,7 +7,7 @@ const ModalNewUser: React.FC<ModalProps> = ({ modalState }) => {
   return (
     <>
       {modalState && (
-        <div className="">
+        <div className="flex flex-col items-center">
           <h2 className="text-center text-2xl mb-6 text-white">
            Eventify!
           </h2>
