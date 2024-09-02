@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { ModalProps } from "@/types";
+import { ModalStartProps } from "@/types";
 import FormComponent from "../FormNewUser";
 
-const ModalNewUser: React.FC<ModalProps> = ({ modalState }) => {
+const ModalNewUser: React.FC<ModalStartProps> = ({ modalState }) => {
 
   return (
     <>

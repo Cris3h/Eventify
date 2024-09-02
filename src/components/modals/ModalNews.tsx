@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 
-import { ModalProps, NewsApiCall } from "@/types";
+import { ModalStartProps, NewsApiCall } from "@/types";
 import { testJSONAPIcall } from '@/test'
 
-const ModalNews: React.FC<ModalProps> = ({ modalState, handleModalState }) => {
-  // console.log(modalState);
+const ModalNews: React.FC<ModalStartProps> = ({ modalState }) => {
 
   return (
     <>

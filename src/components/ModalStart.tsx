@@ -14,7 +14,7 @@ const ModalStart: React.FC<ModalStartProps> = ({ modalState, setShowModal }) => 
     <>
       {modalState && (
         <div className="min-h-screen flex items-center justify-center sm:p-8">
-          <div className="bg-orange-500 shadow-md border rounded-xl p-2 max-w-md w-full sm:h-3/4 md:h-auto">
+          <div className="bg-orange-500 shadow-md border rounded-xl p-2 w-72 max-w-md sm:h-3/4 md:h-auto">
             <div className="w-full flex flex-row justify-end">
               <button onClick={handleModalState}>X</button>
             </div>
@@ -22,12 +22,12 @@ const ModalStart: React.FC<ModalStartProps> = ({ modalState, setShowModal }) => 
             {newUser ? (
               <ModalNewUser
                 modalState={modalState}
-                handleModalState={handleModalState}
+                setShowModal={handleModalState}
               />
             ) : (
               <ModalNews
                 modalState={modalState}
-                handleModalState={handleModalState}
+                setShowModal={handleModalState}
               />
             )}
           </div>
