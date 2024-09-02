@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { ModalProps } from "@/types";
+import { ModalStartProps } from "@/types";
 import FormComponent from "../FormNewUser";
 
-const ModalNewUser: React.FC<ModalProps> = ({ modalState }) => {
+const ModalNewUser: React.FC<ModalStartProps> = ({ modalState }) => {
 
   return (
     <>
       {modalState && (
-        <div className="">
+        <div className="flex flex-col items-center">
           <h2 className="text-center text-2xl mb-6 text-white">
            Eventify!
           </h2>

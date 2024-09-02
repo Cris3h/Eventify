@@ -17,7 +17,8 @@ const FormComponent = () => {
 
   console.log( typeof formData.group, formData.group)
 
-  // Manejar cambios en los inputs individuales
+
+  // Handle individual input changes
   const handleInputChange = (event: any) => {
     const { name, value } = event.target;
     setFormData({
@@ -26,7 +27,8 @@ const FormComponent = () => {
     });
   };
 
-  // Manejar cambios en los inputs del participante nuevo
+
+  // Handle new users input changes
   const handleNewParticipantChange = (event: any) => {
     const { name, value } = event.target;
     setFormData({
@@ -40,10 +42,11 @@ const FormComponent = () => {
 
   
 
-  // Función para manejar el envío del formulario
+
+  // Handle form fetch 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    console.log(formData); // Aquí puedes hacer lo que quieras con los datos del formulario
+    console.log(formData); 
   };
 
   return (
@@ -52,7 +55,7 @@ const FormComponent = () => {
     <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-8 max-w-md w-full">
       <h2 className="text-2xl font-bold text-center mb-6">Answer this quick questionnaire</h2>
 
-      {/* Campo Name */}
+      {/* Name */}
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2">Name</label>
         <input
@@ -65,7 +68,7 @@ const FormComponent = () => {
         />
       </div>
 
-      {/* Campo Last Name */}
+      {/* Last Name */}
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
         <input
@@ -78,7 +81,7 @@ const FormComponent = () => {
         />
       </div>
 
-      {/* Campo Country */}
+      {/* Country */}
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2">Country</label>
         <input
@@ -91,7 +94,7 @@ const FormComponent = () => {
         />
       </div>
 
-      {/* Campo Event Type */}
+      {/* Event Type */}
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2">Event Type</label>
         <input
@@ -104,7 +107,7 @@ const FormComponent = () => {
         />
       </div>
 
-      {/* Campo Event Name */}
+      {/* Event Name */}
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2">Event Name</label>
         <input
@@ -117,7 +120,7 @@ const FormComponent = () => {
         />
       </div>
 
-      {/* Campo Group */}
+      {/* Group */}
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2">Group</label>
         <input
@@ -135,7 +138,7 @@ const FormComponent = () => {
 
 
 {/*------------------------------------------------------------------------------------------------------------------- */}
-      {/* Campo Name del nuevo participante */}
+      {/* Name new group member */}
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2">Name</label>
         <input
@@ -148,7 +151,7 @@ const FormComponent = () => {
         />
       </div>
 
-      {/* Campo Last Name del nuevo participante */}
+      {/* Last Name new group member */}
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
         <input
@@ -161,7 +164,7 @@ const FormComponent = () => {
         />
       </div>
 
-      {/* Campo Country del nuevo participante */}
+      {/*  Country new member */}
       <div className="mb-6">
         <label className="block text-gray-700 text-sm font-bold mb-2">Country</label>
         <input
@@ -177,7 +180,7 @@ const FormComponent = () => {
 
 
 
-      {/* Botón de Submit */}
+      {/* Submit button */}
       <div className="text-center">
         <button
           type="submit"
